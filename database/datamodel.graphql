@@ -1,0 +1,15 @@
+type User {
+  id: ID! @unique
+  favoriteCities: [City!]!
+  city: City
+  favoriteNumbers: [Int!]!
+  number: Int
+  favoriteidioms: [String!]!
+  idiom: String
+}
+
+enum City {
+  NewYork,
+  London,
+  Madrid,
+}
